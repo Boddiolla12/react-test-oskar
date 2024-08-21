@@ -1,11 +1,22 @@
 import './App.css'
-import "./"
+
 const App = () =>  {
+  const name = "Oskar"
+  const lastName = () => {
+    return "Gjelstad"
+  }
+
+  const alertFunction = () => {
+    alert("Kjapp deg vi er straks ferdig")
+  }
   
   return (
+
     <>
-    <h1>vite + React</h1>
-      
+    <h1>Vite + React</h1>
+    <p>Name :  {name} {lastName()}</p>
+
+    <button onClick={alertFunction}>Click me</button> 
   </>
 
 
