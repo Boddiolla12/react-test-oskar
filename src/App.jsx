@@ -1,12 +1,22 @@
 import "./App.css";
 import "./css/global.css";
 
-import Header from "./components/Header.jsx";
+import Header from "./components/header.jsx";
+
+import Footer from "./components/footer.jsx";
 
 const App = () => {
   const name = "Oskar";
   const lastName = () => {
     return "Gjelstad";
+  };
+
+  const phoneNumber = () => {
+    return "40001364";
+  };
+
+  const email = () => {
+    return "Oskar.gjelstad@gmail.com";
   };
 
   const alertFunction = () => {
@@ -18,11 +28,16 @@ const App = () => {
       <Header>
         <h1>Vite + React</h1>
       </Header>
-      <p>
-        Name : {name} {lastName()}
-      </p>
-
-      <button onClick={alertFunction}>Click me</button>
+      <div className="content">
+        <button onClick={alertFunction}>Click me</button>
+      </div>
+      <Footer>
+        <p>
+          Name : {name} {lastName()}
+          Contact : {phoneNumber()}
+          Email : {email()}
+        </p>
+      </Footer>
     </>
   );
 };

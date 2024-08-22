@@ -1,10 +1,28 @@
 body {
   display: flex;
-  justify-content: center;
   text-align: center;
+  flex-direction: column;
 }
 
-#root,
-.app {
+.content {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  flex-direction: column;
+}
+
+button {
+  text-align: center;
+  width: 10vh;
+}
+
+.footer,
+.header {
+  background-color: rgba(133, 162, 200, 0.453);
   width: 100%;
+}
+
+.footer > p {
+  display: flex;
+  flex-direction: column;
 }
