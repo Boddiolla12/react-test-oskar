@@ -1,4 +1,10 @@
 body {
   display: flex;
   justify-content: center;
+  text-align: center;
+}
+
+#root,
+.app {
+  width: 100%;
 }

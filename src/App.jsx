@@ -1,4 +1,6 @@
 import "./App.css";
+import "./css/global.css";
+
 import Header from "./components/Header.jsx";
 
 const App = () => {
@@ -13,8 +15,9 @@ const App = () => {
 
   return (
     <>
-      <h1>Vite + React</h1>
-      <Header />
+      <Header>
+        <h1>Vite + React</h1>
+      </Header>
       <p>
         Name : {name} {lastName()}
       </p>

@@ -1,9 +1,9 @@
 import "../css/header.css";
 
-const Header = () => {
+const Header = ({ children }) => {
   return (
     <div id="header" className="header">
-      This is header
+      {children}
     </div>
   );
 };
