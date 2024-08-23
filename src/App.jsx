@@ -1,6 +1,10 @@
 import "./App.css";
 import "./css/global.css";
 
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+import HomePage from "./pages/homePage.jsx";
+import AboutPage from "./pages/aboutPage.jsx";
 import Header from "./components/header.jsx";
 
 import Footer from "./components/footer.jsx";
@@ -19,22 +23,34 @@ const App = () => {
     return "Oskar.gjelstad@gmail.com";
   };
 
-  const alertFunction = () => {
-    alert("Kjapp deg vi er straks ferdig");
-  };
-
   return (
     <>
       <Header>
         <h1>Vite + React</h1>
       </Header>
-      <div className="content">
-        <button onClick={alertFunction}>Click me</button>
-      </div>
+      <Router>
+        <nav>
+          <ul>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/about">About</a>
+            </li>
+          </ul>
+        </nav>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+        </Routes>
+        <div className="content"></div>
+      </Router>
       <Footer>
         <p>
           Name : {name} {lastName()}
+          <br />
           Contact : {phoneNumber()}
+          <br />
           Email : {email()}
         </p>
       </Footer>

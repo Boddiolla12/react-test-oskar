@@ -7,11 +7,14 @@ body {
 .content {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 1rem;
   flex-direction: column;
+  margin: 1rem;
 }
 
 button {
+  margin: 2rem;
   text-align: center;
   width: 10vh;
 }
@@ -20,9 +23,4 @@ button {
 .header {
   background-color: rgba(133, 162, 200, 0.453);
   width: 100%;
-}
-
-.footer > p {
-  display: flex;
-  flex-direction: column;
 }
