@@ -10,6 +10,14 @@ const MainElement = ({ children }) => {
   );
 };
 
+const SubElement = ({ children }) => {
+  return (
+    <div id="subElement" className="subElement">
+      {children}
+    </div>
+  );
+};
+
 const HomePage = () => {
   let alertMessage = "Bli ferdig snart";
 
@@ -19,6 +27,9 @@ const HomePage = () => {
         <h2>This is the main element</h2>
       </MainElement>
       <AlertFunction alertMessage={alertMessage} />
+      <SubElement>
+        <h3>Second item text</h3>
+      </SubElement>
     </>
   );
 };

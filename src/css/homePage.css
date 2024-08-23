@@ -8,6 +8,16 @@
   border-radius: 3rem;
 }
 
+.subElement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(208, 203, 189);
+  width: 60vh;
+  height: 80vh;
+  border-radius: 3rem;
+}
+
 h2 {
   padding: 2rem;
   margin: 2rem;

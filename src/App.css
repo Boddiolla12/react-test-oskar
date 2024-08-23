@@ -4,13 +4,21 @@ body {
   flex-direction: column;
 }
 
-.content {
+ul {
+  display: flex;
+  flex-direction: row;
+}
+
+li {
+  margin: 20px;
+  list-style: none;
+}
+
+div#root {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
   flex-direction: column;
-  margin: 1rem;
 }
 
 button {
