@@ -1,6 +1,7 @@
 import "../css/homePage.css";
 
-import AlertFunction from "../components/alert";
+import AlertFunction from "../../components/alert/alert";
+import Greeting from "../../components/greeting/greeting";
 
 const MainElement = ({ children }) => {
   return (
@@ -23,6 +24,7 @@ const HomePage = () => {
 
   return (
     <>
+      <Greeting />
       <MainElement>
         <h2>This is the main element</h2>
       </MainElement>
