@@ -1,3 +1,5 @@
+import "../alert/alert.css";
+
 const AlertFunction = ({ alertMessage }) => {
   const handleAlert = () => {
     alert(alertMessage);

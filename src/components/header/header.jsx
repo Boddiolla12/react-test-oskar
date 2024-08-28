@@ -1,4 +1,4 @@
-import "../css/header.css";
+import "../header/header.css";
 
 const Header = ({ children }) => {
   return (

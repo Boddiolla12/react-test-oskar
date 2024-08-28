@@ -1,13 +1,12 @@
 import "./App.css";
-import "./css/global.css";
+import "./styles/global.css";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import HomePage from "./pages/homePage.jsx";
-import AboutPage from "./pages/aboutPage.jsx";
-import Header from "./components/header.jsx";
-
-import Footer from "./components/footer.jsx";
+import HomePage from "./pages//homePage/homePage.jsx";
+import AboutPage from "./pages/aboutPage/aboutPage.jsx";
+import Header from "./components/header/header.jsx";
+import Footer from "./components/footer/footer.jsx";
 
 const App = () => {
   const name = "Oskar";
@@ -43,7 +42,6 @@ const App = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
         </Routes>
-        <div className="content"></div>
       </Router>
       <Footer>
         <p>

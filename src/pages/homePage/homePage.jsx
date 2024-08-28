@@ -1,4 +1,4 @@
-import "../css/homePage.css";
+import "../homePage/homePage.css";
 
 import AlertFunction from "../../components/alert/alert";
 import Greeting from "../../components/greeting/greeting";
